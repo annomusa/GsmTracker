@@ -1,6 +1,6 @@
 package com.who.tracker.gpstracker;
 
-import com.who.tracker.gpstracker.response.RequestGApi;
+import com.who.tracker.gpstracker.request.RequestGApi;
 import com.who.tracker.gpstracker.response.ResponseGApi;
 
 import io.reactivex.Observable;
