@@ -143,11 +143,9 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
                     inputMnc.setText(getResources().getString(id));
                     break;
                 case R.id.main_spn_lac:
-                    Log.d(TAG, "onItemSelected: " + val);
                     isLacDecimal = val.equals("Decimal");
                     break;
                 case R.id.main_spn_cid:
-                    Log.d(TAG, "onItemSelected: " + val);
                     isCidDecimal = val.equals("Decimal");
                     break;
             }
