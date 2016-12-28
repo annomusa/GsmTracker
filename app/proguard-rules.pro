@@ -15,8 +15,3 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
--dontwarn java.**
--dontwarn javax.**x
--dontwarn org.codehaus.**
--dontwarn sun.misc.**
--dontwarn butterknife.**

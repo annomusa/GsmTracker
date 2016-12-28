@@ -8,17 +8,13 @@ import com.google.gson.annotations.SerializedName;
  */
 
 public class ResponseGApi {
-    @SerializedName("location")
+    @SerializedName("locationGApi")
     @Expose
     private LocationGApi locationGApi;
 
     @SerializedName("accuracy")
     @Expose
     private Double accuracy;
-
-    @SerializedName("error")
-    @Expose
-    private String error;
 
     public LocationGApi getLocationGApi() {
         return locationGApi;
@@ -34,22 +30,5 @@ public class ResponseGApi {
 
     public void setAccuracy(Double accuracy) {
         this.accuracy = accuracy;
-    }
-
-    public String getError() {
-        return error;
-    }
-
-    public void setError(String error) {
-        this.error = error;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder stringBuilder = new StringBuilder();
-        if (locationGApi != null) stringBuilder.append(locationGApi.toString());
-        if (accuracy != null) stringBuilder.append(accuracy.toString());
-        if (error != null) stringBuilder.append(error);
-        return stringBuilder.toString();
     }
 }

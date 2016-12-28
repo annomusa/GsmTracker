@@ -11,8 +11,8 @@ public class LocationGApi {
 
     @SerializedName("lat")
     @Expose
-    private Double lat;
 
+    private Double lat;
     @SerializedName("lng")
     @Expose
     private Double lng;
@@ -33,11 +33,4 @@ public class LocationGApi {
         this.lng = lng;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(lat.toString() + " ");
-        stringBuilder.append(lng.toString());
-        return stringBuilder.toString();
-    }
 }

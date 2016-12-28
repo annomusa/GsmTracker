@@ -7,21 +7,18 @@ import com.google.gson.annotations.SerializedName;
  * Created by Raffi on 12/27/2016.
  */
 public class CellTower {
-
+    @SerializedName("cellId")
+    @Expose
     private Integer cellId;
-
+    @SerializedName("locationAreaCode")
+    @Expose
     private Integer locationAreaCode;
-
+    @SerializedName("mobileCountryCode")
+    @Expose
     private Integer mobileCountryCode;
-
+    @SerializedName("mobileNetworkCode")
+    @Expose
     private Integer mobileNetworkCode;
-
-    public CellTower(Integer cellId, Integer locationAreaCode, Integer mobileCountryCode, Integer mobileNetworkCode) {
-        this.cellId = cellId;
-        this.locationAreaCode = locationAreaCode;
-        this.mobileCountryCode = mobileCountryCode;
-        this.mobileNetworkCode = mobileNetworkCode;
-    }
 
     public Integer getCellId() {
         return cellId;
@@ -53,15 +50,5 @@ public class CellTower {
 
     public void setMobileNetworkCode(Integer mobileNetworkCode) {
         this.mobileNetworkCode = mobileNetworkCode;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(cellId + " "
-                + locationAreaCode + " "
-                + mobileCountryCode + " "
-                + mobileNetworkCode);
-        return stringBuilder.toString();
     }
 }
