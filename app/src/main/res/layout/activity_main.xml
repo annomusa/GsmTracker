@@ -19,121 +19,106 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <LinearLayout
-        android:id="@+id/main_ll_mcc"
-        android:layout_width="match_parent"
+    <TextView
+        android:text="MCC Code"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@+id/main_tv_title">
-        <TextView
-            android:text="MCC Code"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/main_tv_mcc"
-            android:layout_marginTop="24dp" />
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/main_spn_mcc"
-                android:layout_weight="1" />
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="510"
-                android:id="@+id/main_input_mcc"
-                android:inputType="number"
-                android:hint="Indonesia - 510" />
-        </LinearLayout>
-    </LinearLayout>
+        android:id="@+id/main_tv_mcc"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/main_tv_title"/>
 
-    <LinearLayout
-        android:id="@+id/main_ll_mnc"
-        android:layout_width="match_parent"
+    <Spinner
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@id/main_ll_mcc">
-        <TextView
-            android:text="MNC Code"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/main_tv_mnc"
-            android:layout_marginTop="10dp" />
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/main_spn_mnc"
-                android:layout_weight="1" />
-            <EditText
-                android:layout_width="172dp"
-                android:layout_height="wrap_content"
-                android:text="10"
-                android:id="@+id/main_input_mnc"
-                android:inputType="number"
-                android:hint="Telkomsel - 10" />
-        </LinearLayout>
-    </LinearLayout>
+        android:id="@+id/main_spn_mcc"
+        android:layout_weight="1"
+        android:layout_below="@id/main_tv_mcc"/>
 
-    <LinearLayout
-        android:id="@+id/main_ll_lac"
-        android:layout_width="match_parent"
+    <EditText
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@+id/main_ll_mnc">
-        <TextView
-            android:text="LAC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/main_tv_lac"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/main_spn_lac"
-                android:layout_weight="1" />
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/main_input_lac"
-                android:inputType="text"
-                android:hint="Tap to add" />
-        </LinearLayout>
-    </LinearLayout>
+        android:text="510"
+        android:id="@+id/main_input_mcc"
+        android:inputType="number"
+        android:hint="Indonesia - 510"
+        android:layout_below="@+id/main_tv_mcc"
+        android:layout_toRightOf="@+id/main_spn_mcc"
+        android:layout_toEndOf="@+id/main_spn_mcc" />
 
-    <LinearLayout
-        android:id="@+id/main_ll_cid"
-        android:layout_width="match_parent"
+    <TextView
+        android:text="MNC Code"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@id/main_ll_lac">
-        <TextView
-            android:text="CID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/main_tv_cid" />
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/main_spn_cid"
-                android:layout_weight="1" />
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/main_input_cid"
-                android:inputType="text"
-                android:hint="Tap to add" />
-        </LinearLayout>
-    </LinearLayout>
+        android:id="@+id/main_tv_mnc"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/main_input_mcc"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_spn_mnc"
+        android:layout_weight="1"
+        android:layout_below="@id/main_tv_mnc"/>
+
+    <EditText
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_input_mnc"
+        android:inputType="number"
+        android:hint="Telkomsel - 10"
+        android:layout_below="@id/main_tv_mnc"
+        android:layout_toRightOf="@id/main_spn_mnc"
+        android:layout_toEndOf="@id/main_spn_mnc"/>
+
+    <TextView
+        android:text="LAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_tv_lac"
+        android:layout_below="@id/main_input_mnc"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_spn_lac"
+        android:layout_weight="1"
+        android:layout_below="@+id/main_tv_lac"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_input_lac"
+        android:inputType="text"
+        android:hint="Tap to add"
+        android:layout_below="@id/main_tv_lac"
+        android:layout_toRightOf="@id/main_spn_lac"
+        android:layout_toEndOf="@id/main_spn_lac"/>
+
+    <TextView
+        android:text="CID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_tv_cid"
+        android:layout_below="@id/main_input_lac"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_spn_cid"
+        android:layout_weight="1"
+        android:layout_below="@id/main_tv_cid"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_input_cid"
+        android:inputType="text"
+        android:hint="Tap to add"
+        android:layout_below="@id/main_tv_cid"
+        android:layout_toRightOf="@id/main_spn_cid"
+        android:layout_toEndOf="@id/main_spn_cid"/>
 
     <Button
         android:text="Locate"
@@ -141,5 +126,5 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:id="@+id/main_btn_locate"
-        android:layout_below="@+id/main_ll_cid"/>
+        android:layout_below="@+id/main_input_cid"/>
 </RelativeLayout>

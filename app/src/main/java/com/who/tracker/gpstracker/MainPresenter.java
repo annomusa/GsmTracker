@@ -13,7 +13,6 @@ import rx.Subscriber;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
-import rx.subscriptions.CompositeSubscription;
 import rx.subscriptions.Subscriptions;
 
 import static com.who.tracker.gpstracker.Constant.BASE_URL;
